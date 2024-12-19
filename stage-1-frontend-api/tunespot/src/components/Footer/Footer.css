@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  font-family: Baumans, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}

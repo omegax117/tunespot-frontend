@@ -1,0 +1,45 @@
+.video-card {
+  list-style: none;
+}
+
+.video-card__img {
+  width: auto;
+  border-radius: 19px;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  height: auto;
+  max-height: 328px;
+  cursor: pointer;
+  max-width: 80%;
+}
+
+.video-card__empty {
+  font-size: xx-large;
+  background-color: #8a97cc;
+  cursor: pointer;
+}
+
+.video-card__btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin: 15px 0 15px 0;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ebebeb;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  max-width: 100%;
+  width: 190px;
+}
+.video-card__btn:hover {
+  border-color: #646cff;
+}
+.video-card__btn:focus,
+.video-card__btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.video-card__search {
+  margin: 15px auto;
+}
