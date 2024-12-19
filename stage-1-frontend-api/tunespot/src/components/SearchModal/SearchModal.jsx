@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ModalWithForm } from "../ModalWithForm/ModalWithForm";
 import { VideoSection } from "../VideoSection/VideoSection";
+import { Preloader } from "../Preloader/Preloader";
 
 const SearchModal = ({
   isOpen,
@@ -50,11 +51,15 @@ const SearchModal = ({
         <button className="modal__clear" onClick={clearSearch}>
           CLEAR RESULTS
         </button>
-        <VideoSection
-          addVideo={addVideo}
-          videos={results}
-          isLoggedIn={isLoggedIn}
-        />
+        {isLoading ? (
+          <Preloader></Preloader>
+        ) : (
+          <VideoSection
+            addVideo={addVideo}
+            videos={results}
+            isLoggedIn={isLoggedIn}
+          />
+        )}
       </ModalWithForm>
     </>
   );
