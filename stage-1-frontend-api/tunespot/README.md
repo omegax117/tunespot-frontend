@@ -6,4 +6,4 @@ This website is built using react. Due to copyrights on most music videos, the i
 
 PLEASE NOTE: This is a public use API key. I have a private key to use once the backend is secure, so currently artist ID searches will ALL return as daft punk
 
-github pages: https://omegax117.github.io/stage-1-frontend-api
+github pages: https://omegax117.github.io/tunespot-frontend
