@@ -5,3 +5,5 @@ This is the tuneSpot website. Using the API provided by the audioDB this website
 This website is built using react. Due to copyrights on most music videos, the items in a collection link to youtube, as most have embedding disabled to protect artist copyright.
 
 PLEASE NOTE: This is a public use API key. I have a private key to use once the backend is secure, so currently artist ID searches will ALL return as daft punk
+
+github pages: https://omegax117.github.io/stage-1-frontend-api
