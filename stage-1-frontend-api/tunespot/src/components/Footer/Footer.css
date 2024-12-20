@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__text {
+  font-family: Baumans, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 8px 0 0;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    max-width: 310px;
+  }
+  .footer__text {
+    margin: 8px 0;
+  }
+}

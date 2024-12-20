@@ -1,0 +1,6 @@
+.video-section {
+  max-height: 600px;
+  overflow-y: visible;
+  overflow-x: hidden;
+  max-width: 100%;
+}

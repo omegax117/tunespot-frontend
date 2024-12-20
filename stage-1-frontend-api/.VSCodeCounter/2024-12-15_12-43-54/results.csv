@@ -1,0 +1,34 @@
+"filename", "language", "CSS", "XML", "JSON", "JavaScript JSX", "Markdown", "JavaScript", "HTML", "comment", "blank", "total"
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\README.md", "Markdown", 0, 0, 0, 0, 5, 0, 0, 0, 4, 9
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\eslint.config.js", "JavaScript", 0, 0, 0, 0, 0, 37, 0, 0, 2, 39
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\index.html", "HTML", 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\package-lock.json", "JSON", 0, 0, 9839, 0, 0, 0, 0, 0, 1, 9840
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\package.json", "JSON", 0, 0, 36, 0, 0, 0, 0, 0, 1, 37
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\public\tS.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\public\vite.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\assets\logo.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\assets\react.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\App\App.css", "CSS", 41, 0, 0, 0, 0, 0, 0, 0, 7, 48
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\App\App.jsx", "JavaScript JSX", 0, 0, 0, 156, 0, 0, 0, 18, 16, 190
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Footer\Footer.css", "CSS", 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Footer\Footer.jsx", "JavaScript JSX", 0, 0, 0, 13, 0, 0, 0, 0, 2, 15
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Header\Header.css", "CSS", 28, 0, 0, 0, 0, 0, 0, 1, 3, 32
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Header\Header.jsx", "JavaScript JSX", 0, 0, 0, 15, 0, 0, 0, 0, 2, 17
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\LoginModal\LoginModal.jsx", "JavaScript JSX", 0, 0, 0, 57, 0, 0, 0, 0, 7, 64
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Main\Main.css", "CSS", 62, 0, 0, 0, 0, 0, 0, 0, 11, 73
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\Main\Main.jsx", "JavaScript JSX", 0, 0, 0, 65, 0, 0, 0, 0, 1, 66
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\ModalWithForm\ModalWithForm.css", "CSS", 98, 0, 0, 0, 0, 0, 0, 0, 15, 113
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\ModalWithForm\ModalWithForm.jsx", "JavaScript JSX", 0, 0, 0, 46, 0, 0, 0, 0, 2, 48
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\RegisterModal\RegisterModal.jsx", "JavaScript JSX", 0, 0, 0, 87, 0, 0, 0, 0, 9, 96
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\SearchModal\SearchModal.jsx", "JavaScript JSX", 0, 0, 0, 66, 0, 0, 0, 0, 8, 74
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\VideoCard\VideoCard.css", "CSS", 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\VideoCard\VideoCard.jsx", "JavaScript JSX", 0, 0, 0, 18, 0, 0, 0, 0, 1, 19
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\VideoSection\VideoSection.css", "CSS", 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\components\VideoSection\VideoSection.jsx", "JavaScript JSX", 0, 0, 0, 23, 0, 0, 0, 1, 2, 26
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\index.css", "CSS", 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\main.jsx", "JavaScript JSX", 0, 0, 0, 13, 0, 0, 0, 0, 2, 15
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\src\utils\api.js", "JavaScript", 0, 0, 0, 0, 0, 25, 0, 0, 5, 30
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\vendor\Fonts.css", "CSS", 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\vendor\normalize.css", "CSS", 146, 0, 0, 0, 0, 0, 0, 131, 75, 352
+"c:\Users\rogue\projects\tunespot\stage-1-frontend-api\tunespot\vite.config.js", "JavaScript", 0, 0, 0, 0, 0, 8, 0, 1, 2, 11
+"Total", "-", 411, 4, 9875, 559, 5, 70, 13, 152, 187, 11276
