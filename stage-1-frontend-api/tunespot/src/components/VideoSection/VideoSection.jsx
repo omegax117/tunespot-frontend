@@ -5,7 +5,7 @@ export function VideoSection({ videos, addVideo, isLoggedIn }) {
   return (
     <div className="video-section">
       <div className="video-section__info">
-        <p className="video-section__title">Search Results:</p>
+        <h2 className="video-section__title">Search Results:</h2>
       </div>
       <ul className="video-section__list">
         {videos?.mvids?.length > 0 ? (

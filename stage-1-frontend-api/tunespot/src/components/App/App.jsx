@@ -109,7 +109,7 @@ function App() {
           setIsLoggedIn(true);
           auth.getUser(data.token).then((user) => {
             setUserData(user);
-            // navigate("/profile");
+            navigate("/profile");
           });
         }
       });

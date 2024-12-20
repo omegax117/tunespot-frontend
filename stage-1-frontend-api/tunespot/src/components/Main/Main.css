@@ -58,7 +58,7 @@
   margin: 15px 0 15px 0;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: inherit;
   background-color: #ebebeb;
   cursor: pointer;
@@ -82,9 +82,10 @@
   font-family: baumans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  padding: none;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #001;
   background-color: #242424;
 
   font-synthesis: none;
@@ -106,7 +107,7 @@ body {
   margin: 0;
   display: block;
   place-items: center;
-  min-width: 320px;
+  min-width: 300px;
   min-height: 100vh;
 }
 
@@ -125,5 +126,27 @@ h1 {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .body {
+    max-width: 310px;
+  }
+  .main__id-search {
+    flex-direction: column;
+  }
+  .main__title {
+    font-size: medium;
+  }
+  .main__intro {
+    font-size: x-small;
+    max-width: 280px;
+    text-wrap: break-word;
+    width: 80%;
+  }
+  .main__btn {
+    width: 80px;
+    margin: 8px auto;
   }
 }

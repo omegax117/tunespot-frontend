@@ -46,6 +46,7 @@ const SearchModal = ({
             className="modal__input"
             value={video}
             onChange={handleVideoChange}
+            required
           />
         </label>
         <button className="modal__clear" onClick={clearSearch}>

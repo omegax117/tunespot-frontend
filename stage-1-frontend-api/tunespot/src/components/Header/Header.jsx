@@ -6,6 +6,7 @@ import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
 export default function Header({ login, register, isLoggedIn, logout }) {
   const user = useContext(CurrentUserContext);
+  console.log(user);
   return (
     <header className="header">
       <Link to="/" className="header__logo">

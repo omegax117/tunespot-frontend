@@ -30,9 +30,8 @@ export default function Main({
       <h1 className="main__title">TUNE SPOT</h1>
       <p className="main__intro">
         tuneSpot is a great place to build your own private collection of music
-        videos by your favorite artists. Simply search an artist by name and use
-        that ID to look for their music videos. A free account is required to
-        prevent excess data requests.
+        videos by your favorite artists. Search an artist by name and use that
+        ID # to find music videos. A free account is required.
       </p>
       {isLoggedIn ? (
         <>
@@ -46,6 +45,7 @@ export default function Main({
                 className="main__input"
                 value={artist}
                 onChange={handleArtistChange}
+                required
               />
             </label>
             <button className="main__btn">Find artist ID</button>

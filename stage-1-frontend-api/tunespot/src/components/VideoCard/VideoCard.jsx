@@ -16,6 +16,7 @@ export function VideoCard({ item, addOrRemove, btnText, isLoggedIn }) {
               onClick={handleClick}
               className="video-card__img"
               src={item.strTrackThumb}
+              alt="preview image of music video title"
             />
           )}
 

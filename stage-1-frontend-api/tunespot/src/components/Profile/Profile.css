@@ -1,0 +1,10 @@
+.profile {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__avatar {
+  height: 258px;
+  margin: 4px 0;
+}

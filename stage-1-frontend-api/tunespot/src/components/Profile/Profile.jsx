@@ -6,7 +6,11 @@ export function Profile({ userVideos, removeVideo, isLoggedIn }) {
   const user = useContext(CurrentUserContext);
   return (
     <div className="profile">
-      <img src={user.avatar} alt="profile_picture" />
+      <img
+        className="profile__avatar"
+        src={user.data.avatar}
+        alt="profile_picture"
+      />
       <h2>{user.name}</h2>
       <section>
         <ul className="main__cards">
