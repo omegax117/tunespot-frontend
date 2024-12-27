@@ -1,12 +1,20 @@
+import { useState } from "react";
+import { baseUrl } from "./api";
+// const [apiKey, setApiKey] = useState([{}]);
+
+// useEffect(() => {
+//   fetch(`http://localhost:3000`)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       setApiKey(data);
+//     });
+// }, []);
+
 const key = "2";
 export const headers = {
   Accept: "application/json",
   "Content-Type": "application/json",
 };
-
-function processServerRequest(res) {
-  return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
-}
 
 async function getArtist(query) {
   let obj;

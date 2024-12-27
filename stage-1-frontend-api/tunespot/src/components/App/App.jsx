@@ -4,16 +4,18 @@ import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import { getArtist, getVideo } from "../../utils/AudioDBApi";
+import { getArtist, getVideo } from "../../utils/AudioDBApi.js";
 import { Footer } from "../Footer/Footer";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SearchModal from "../SearchModal/SearchModal";
 import { setToken, getToken } from "../../utils/token";
 import * as auth from "../../utils/auth";
+import * as api from "../../utils/api.js";
 import { AppContext } from "../../contexts/AppContext";
 import { ProtectedRoute } from "../ProtectedRoute/ProtectedRoute";
 import { Profile } from "../Profile/Profile";
+import { postItem } from "../../utils/api.js";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -85,11 +87,26 @@ function App() {
     };
   }, [activeModal]);
 
+  useEffect(() => {
+    api.getItems().then((data) => {
+      setUserVideos(data);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      return;
+    }
+    api.getItems().then((data) => {
+      setUserVideos(data);
+    });
+  }, []);
+
   // log/ register interactions
-  const onRegister = ({ email, password, name, avatar }) => {
+  const onRegister = ({ name, avatar, email, password }) => {
     const makeRequest = () => {
       if (email) {
-        return auth.register({ email, password, name, avatar }).then(() => {
+        return auth.register({ name, avatar, email, password }).then(() => {
           setActiveModal("login");
         });
       }
@@ -104,9 +121,12 @@ function App() {
       }
       return auth.login({ email, password }).then((data) => {
         if (data.token) {
-          console.log(data.token);
+          console.log(data);
           setToken(data.token);
           setIsLoggedIn(true);
+          api.getItems().then((data) => {
+            setUserVideos(data);
+          });
           auth.getUser(data.token).then((user) => {
             setUserData(user);
             navigate("/profile");
@@ -126,12 +146,20 @@ function App() {
 
   // favorite interactions
   const addVideo = (values) => {
-    setUserVideos([values, ...userVideos]);
+    console.log(values);
+    const jwt = localStorage.getItem("jwt");
+    const makeRequest = () => {
+      return postItem(values, jwt).then((res) => {
+        setUserVideos([values, ...userVideos]);
+      });
+    };
+    loadSubmit(makeRequest);
   };
 
   const removeVideo = (card) => {
+    api.deleteItem(card._id);
     const newUserVideos = userVideos.filter((item) => {
-      return item.idTrack !== card.idTrack ? item : null;
+      return item._id !== card._id ? item : null;
     });
     setUserVideos(newUserVideos);
   };

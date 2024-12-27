@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 1337,
   },
-  base: "/tunespot-frontend/",
+  base: "/",
 });

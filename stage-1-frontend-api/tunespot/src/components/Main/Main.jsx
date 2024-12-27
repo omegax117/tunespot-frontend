@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { VideoCard } from "../VideoCard/VideoCard";
 import { demoItem } from "../../utils/demoItem";
+import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
 export default function Main({
-  get,
   openSearch,
   getArtist,
   userVideos,
@@ -12,7 +12,8 @@ export default function Main({
 }) {
   const [artist, setArtist] = useState("");
   const [id, setId] = useState("");
-
+  const user = useContext(CurrentUserContext);
+  const thisUserVideos = userVideos.filter((item) => item.owner === user._id);
   const handleArtistChange = (e) => {
     setArtist(e.target.value);
   };
@@ -56,10 +57,10 @@ export default function Main({
             Search Videos Now!
           </button>
           <ul className="main__cards">
-            {userVideos.length > 0 ? (
-              userVideos.map((item) => (
+            {thisUserVideos.length > 0 ? (
+              thisUserVideos.map((item) => (
                 <VideoCard
-                  key={item.idTrack}
+                  key={item.strTrack}
                   item={item}
                   addOrRemove={removeVideo}
                   btnText={"Remove from Favorites"}

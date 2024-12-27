@@ -6,7 +6,6 @@ import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
 export default function Header({ login, register, isLoggedIn, logout }) {
   const user = useContext(CurrentUserContext);
-  console.log(user);
   return (
     <header className="header">
       <Link to="/" className="header__logo">
@@ -16,7 +15,6 @@ export default function Header({ login, register, isLoggedIn, logout }) {
         <Link to="/profile" className="header__link">
           <div className="header__user-container">
             <p className="header__user-name">{user.name}</p>
-            <p className="header__user-name">DEMO NAME</p>
           </div>
         </Link>
       ) : (

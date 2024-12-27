@@ -1,27 +1,31 @@
-const login = (email, password) => {
-  return new Promise((resolve, reject) => {
-    resolve({ token: "fake token" });
-  });
+import { baseUrl, processServerRequest } from "./api";
+const headers = {
+  Accept: "application/json",
+  "Content-Type": "application/json",
+};
+
+const login = ({ email, password }) => {
+  return fetch(`${baseUrl}/signin`, {
+    method: "POST",
+    headers: headers,
+    body: JSON.stringify({ email, password }),
+  }).then(processServerRequest);
 };
 
 const getUser = (token) => {
-  return new Promise((resolve, reject) => {
-    resolve({
-      data: {
-        name: "fake user",
-        email: "fake@email.com",
-        id: "fake-id",
-        avatar:
-          "https://images.unsplash.com/photo-1578763727915-a976fa77f8c4?q=80&w=1969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-    });
-  });
+  headers.authorization = `Bearer ${token}`;
+  return fetch(`${baseUrl}/users/me`, {
+    method: "GET",
+    headers: headers,
+  }).then(processServerRequest);
 };
 
 const register = ({ name, avatar, email, password }) => {
-  return new Promise((resolve, reject) => {
-    resolve({ data: { name, avatar, email, password } });
-  });
+  return fetch(`${baseUrl}/signup`, {
+    method: "POST",
+    headers: headers,
+    body: JSON.stringify({ name, avatar, email, password }),
+  }).then(processServerRequest);
 };
 
 export { login, getUser, register };
