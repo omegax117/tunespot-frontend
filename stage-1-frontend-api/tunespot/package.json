@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https:omegax117.github.io/tunespot",
+  "homepage": "https:tunespot.crabdance.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
