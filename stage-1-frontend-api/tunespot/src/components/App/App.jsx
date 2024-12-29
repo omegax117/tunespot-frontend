@@ -146,11 +146,12 @@ function App() {
 
   // favorite interactions
   const addVideo = (values) => {
-    console.log(values);
     const jwt = localStorage.getItem("jwt");
     const makeRequest = () => {
       return postItem(values, jwt).then((res) => {
-        setUserVideos([values, ...userVideos]);
+        api.getItems().then((data) => {
+          setUserVideos(data);
+        });
       });
     };
     loadSubmit(makeRequest);
